@@ -4,10 +4,17 @@ body{
 nav{
     display: flex;
     border: solid black;
-    margin: 1em;
-    height: 12vh;
+    margin: 1vh;
+    height: 10vh;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.591);
+}
+.logo{height: 100%;}
+.items{
+    border: solid black;
+    height: 30vh;
+    margin: 1em;
+
 }
 .nav{
 
@@ -20,23 +27,52 @@ align-items: center;
     margin-right: 10px;
     align-items: center;
 }
-.heder{
-    border: solid black;
-    height: 50vh;
+
+
+.advisement{
+    border: solid;
+    background-color: rgba(46, 23, 11, 0.804);
+    height: 70vh;
     display: flex;
-    margin: 1em;
+    align-items: center;
+    margin: 1vh;
+  }
+  .ADClass{
+    display: flex;
+    width: 49.5%;
 
 }
-
-.logo{
-
-    height: 100%;
+#ad1 , #ad2{
+    margin: 3px;
+}
+  /* .advisement img{
+    display: none;
+  } */
+  .ADImges{
+    width: 100%;
     
+  }
+  img.displaySlide{
+    display: block;
+  }
+  .advisement button{
+    opacity: .6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background-color: rgba(74, 38, 19, 0.5);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    align-items: center;
+  }
+  .back{
+    left: 2%;
+  }
+  .next{
+    right: 2%;
+  }
 
-}
-.items{
-    border: solid black;
-    height: 30vh;
-    margin: 1em;
 
-}
