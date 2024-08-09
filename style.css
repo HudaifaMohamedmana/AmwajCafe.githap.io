@@ -39,15 +39,16 @@ align-items: center;
   }
   .ADClass{
     display: flex;
-    width: 49.5%;
+    width: 100%;
 
 }
 #ad1 , #ad2{
     margin: 3px;
+    width: 50%;
 }
-  /* .advisement img{
+  .ADClass{
     display: none;
-  } */
+  }
   .ADImges{
     width: 100%;
     
