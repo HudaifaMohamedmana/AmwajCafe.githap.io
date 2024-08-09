@@ -3,7 +3,7 @@ border: solid black;
 height: 15vh;
 margin: 1em;
 display: flex;
-
+align-items: center;
 }
 .heder{
     border: solid black;
