@@ -1,0 +1,27 @@
+nav{
+border: solid black;
+height: 15vh;
+margin: 1em;
+display: flex;
+
+}
+.heder{
+    border: solid black;
+    height: 50vh;
+    display: flex;
+    margin: 1em;
+
+}
+
+.logo{
+
+    height: 100%;
+    
+
+}
+.items{
+    border: solid black;
+    height: 30vh;
+    margin: 1em;
+
+}
