@@ -1,9 +1,20 @@
 nav{
-border: solid black;
-height: 15vh;
-margin: 1em;
+    display: flex;
+    border: solid black;
+    margin: 1em;
+    height: 12vh;
+    justify-content: space-between;
+}
+.nav{
+
+height: 100%;
 display: flex;
 align-items: center;
+}
+.cart{
+    height: 95%;
+    margin-right: 10px;
+    align-items: center;
 }
 .heder{
     border: solid black;
