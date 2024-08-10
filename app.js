@@ -19,11 +19,6 @@ function showSlide(i){
     } else if(i <0){
         ADID = list.length -1 ;
     }
-
- 
-
-
-
     list.forEach(list =>{
        
         list.classList.remove("displaySlide");
@@ -33,13 +28,3 @@ function showSlide(i){
 
 }
 
-
-
-function next() {
-
-    
-}
-function back() {
-
-    
-}
