@@ -11,12 +11,7 @@ nav{
     background-color: rgba(255, 255, 255, 0.591);
 }
 .logo{height: 100%;}
-.items{
-    border: solid black;
-    height: 30vh;
-    margin: 1em;
 
-}
 .nav{
 
 height: 100%;
@@ -58,19 +53,8 @@ align-items: center;
   img.displaySlide{
     display: block;
   }
-  .advisement button{
-    opacity: .6;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    background-color: rgba(74, 38, 19, 0.5);
-    color: aliceblue;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    align-items: center;
-  }
+  
+ 
   .back{
     left: 2%;
   }
@@ -79,8 +63,27 @@ align-items: center;
   }
   .drinks{
     border: solid;
-    height: 50vh;
     margin: 1vh;
+    display: flex;
   }
+.drinks button{
+  opacity: .6;
+  position: absolute;
+  top: 95%;
+  transform: translateY(0%);
+  font-size: 30px;
+  background-color: rgba(74, 38, 19, 0.5);
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  align-items: center; 
+}
+.items{
+    border: solid;
+    width: 18vw;
+    height: 500px;
+    margin: 1vh;
+}
 
 

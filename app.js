@@ -33,13 +33,10 @@ function showSlide(i){
 
 }
 function next() {
-    ADID++;
-    showSlide(ADID);
+
     
 }
 function back() {
-    clearInterval(intValio);
-    ADID--;
-    showSlide(ADID);
+
     
 }
