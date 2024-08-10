@@ -32,6 +32,9 @@ function showSlide(i){
     list[ADID+x].classList.add("displaySlide");
 
 }
+
+
+
 function next() {
 
     
