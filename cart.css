@@ -1,0 +1,26 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFuB6f_D5THahYPTZh1ZGyoBMiCTazS8Md-l_mMHKRqqHQgjg8n9xKEcg7kl0_DUNrMGw&usqp=CAU);
+    height: 220vh;
+  }
+  nav{
+    display: flex;
+    border: solid black;
+    margin: 1vh;
+    height: 10vh;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.591);
+  }
+  .logo{height: 100%;}
+  
+  .nav{
+  
+  height: 100%;
+  display: flex;
+  align-items: center;
+  }
+  .home{
+    height: 90%;
+    margin-right: 10px;
+    align-items: center;
+    margin: 4px;
+  }
