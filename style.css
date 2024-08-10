@@ -10,14 +10,12 @@ nav{
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.591);
 }
-.logo{height: 100%;}
-
 .nav{
-
 height: 100%;
 display: flex;
 align-items: center;
 }
+.logo{height: 100%;}
 .cart{
   height: 95%;
   margin-right: 10px;
@@ -55,17 +53,31 @@ align-items: center;
   }
   
  
-  .back{
-    left: 2%;
-  }
-  .next{
-    right: 2%;
-  }
-  .drinks{
+.back{
+  left: 2%;
+}
+.next{
+  right: 2%;
+}
+.heder{
+  font-size: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 20%;
+  border: solid;
+  background-color: rgba(0, 0, 0, 0.256);
+}
+.drinks{
     /* border: solid; */
     margin: 1vh;
     display: flex;
-  }
+    flex-wrap: wrap;
+}
+.swites{
+  display: flex;
+  margin: 1vh;
+  flex-wrap: wrap;
+}
 .drinks button{
   opacity: .6;
   position: absolute;
@@ -81,12 +93,20 @@ align-items: center;
 }
 .items1{
     border: solid;
-    width: 18vw;
+    width: 17.5vw;
     height: 500px;
     margin: 1vh;
     border-radius: 35px;
  background-color: rgba(162, 73, 0, 0.847);
     
+}
+.items2{
+  border: solid;
+  width: 17.5vw;
+  height: 500px;
+  margin: 1vh;
+  border-radius: 35px;
+  background-color: rgba(239, 116, 188, 0.607);
 }
 .items1 img{
   width: 100%;
@@ -94,32 +114,7 @@ align-items: center;
   border-radius: 35px;
 
 }
-.description{
-  text-align: center;
- 
 
-}
-.heder{
-  font-size: 30px;
-  padding-left: 100px;
-  padding-right: 100px;
-  border-radius: 20%;
-  border: solid;
-  background-color: rgba(0, 0, 0, 0.256);
-}
-.swites{
-  display: flex;
-  margin: 1vh;
-}
-.items2{
-  border: solid;
-  width: 18vw;
-  height: 500px;
-  margin: 1vh;
-  border-radius: 35px;
-background-color: rgba(239, 116, 188, 0.607);
-  
-}
 .items2 img{
 width: 100%;
 height: 28vh;
@@ -131,6 +126,8 @@ border-radius: 35px;
 .items2:hover {
   zoom: 115%;
 }
-
+.description{
+  text-align: center;
+}
 
 
