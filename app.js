@@ -52,13 +52,18 @@
 
 
 
-const form = document.querySelector('form');
+const form = document.querySelector('.BillingInformation button');
 
  
-function submitOrder(Event) {
-  console.log (Event) 
+function submitOrder(event) {
+    event.
+    // if (condition) {
+    //     alert('thanxs man')
+    // }
+    console.log(event)
+  
 }
 
-form.addEventListener("click",submitOrder);
+form.addEventListener("click", submitOrder);
 
 
