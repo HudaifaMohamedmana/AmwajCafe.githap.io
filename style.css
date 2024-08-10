@@ -62,7 +62,7 @@ align-items: center;
     right: 2%;
   }
   .drinks{
-    border: solid;
+    /* border: solid; */
     margin: 1vh;
     display: flex;
   }
@@ -98,6 +98,14 @@ align-items: center;
   text-align: center;
  
 
+}
+.heder{
+  font-size: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 20%;
+  border: solid;
+  background-color: rgba(0, 0, 0, 0.256);
 }
 
 
