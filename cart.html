@@ -29,24 +29,24 @@
         </nav>
         <div class="chekout">
 
-
-            <div class="formDiv">
-                <form action="/submit-checkout" method="POST">
+            <form action="/submit-checkout" method="POST"></form>
+                <div class="formDiv">
+                
                     <div class="BillingInformation">
-                    <h3>Billing Information</h3>
-                        <label for="firstname">First Name:</label>
-                        <input type="text" id="firstname" name="firstname" placeholder="John" required>
+                        <h3>Billing Information</h3>
+                        <label for="firstname">Name:</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="firstname" required>
                     
-                        <label for="lastname">Last Name:</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+                        
+                        <input type="text" id="lastname" name="lastname" placeholder="lastname" required>
                     
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                        <input type="email" id="email" name="email" placeholder="name123@example.com" required>
                     
                         <label for="phone">Phone Number:</label>
                         <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
-                    </div>
-                    <div class="address">
+                    
+
                         <h3>Shipping Address</h3>
                         <label for="address">Address:</label>
                         <input type="text" id="address" name="address" placeholder="123 Main St" required>
@@ -62,12 +62,13 @@
                     
                         <label for="country">Country:</label>
                         <input type="text" id="country" name="country" placeholder="USA" required>
-                    </div>   
+                       
                     <!-- Submit Button -->
-                    <button type="submit">Complete Purchase</button>
-                </form>
+                        <button type="submit">Complete Purchase</button>
+                    </div>
 
-            </div>
+                </div>
+            </form>
             <div class="orders">
 
             </div>
