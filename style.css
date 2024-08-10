@@ -78,7 +78,7 @@ align-items: center;
   margin: 1vh;
   flex-wrap: wrap;
 }
-.drinks button{
+/* .drinks button{
   opacity: .6;
   position: absolute;
   top: 95%;
@@ -90,7 +90,7 @@ align-items: center;
   cursor: pointer;
   padding: 5px;
   align-items: center; 
-}
+} */
 .items1{
     border: solid;
     width: 17.5vw;
