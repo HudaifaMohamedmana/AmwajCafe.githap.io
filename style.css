@@ -109,6 +109,7 @@ align-items: center;
 }
 .swites{
   display: flex;
+  margin: 1vh;
 }
 .items2{
   border: solid;
