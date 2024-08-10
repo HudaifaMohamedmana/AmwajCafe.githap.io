@@ -14,11 +14,13 @@ function intValioslider() {
 function showSlide(i){
     
     if (i>=list.length-1) {
-        ADID = 0
-        
+        ADID = 0;
+        x=1;
     } else if(i <0){
         ADID = list.length -1 ;
     }
+
+ 
 
 
 
