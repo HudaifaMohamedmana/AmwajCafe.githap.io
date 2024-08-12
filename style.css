@@ -171,13 +171,15 @@ margin-top: auto;
 margin-bottom: auto;
 font-weight: bold;
 }
-
+.CortIcon{
+  cursor: pointer;
+}
 .cartTab{
-  width: 600px;
+  width: 620px;
   background-color: #353432;
   color: #eee;
   position: fixed;
-  inset: 0 -600px 0 auto;
+  inset: 0 -620px 0 auto;
   display: grid;
   grid-template-rows: 70px 1fr 70px;
   transition: .5s;

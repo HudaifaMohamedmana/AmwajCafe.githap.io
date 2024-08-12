@@ -43,29 +43,37 @@ function showSlide(i){
 
 const itemButtons = document.querySelectorAll('.items1 button, .items2 button');
 const ordersList = document.querySelector('.orderList');
-
-
+const iconContSpan =document.querySelector('.CortIcon span');
+console.log(iconContSpan)
 
 
 itemButtons.forEach(button => {
     button.addEventListener("click", () => {
-        const newDiv = document.createElement('div');
         const itemId = button.getAttribute('data-id');
         const itemDiv = document.getElementById(itemId);
-        const span = document.createElement('span');
-        span.textContent = 1; // Set the text or content of the span
+        iconContSpan.textContent++;
+        // iconContSpan++
+        let existingDiv = ordersList.querySelector(`[data-item-id="${itemId}"]`);
+        
+        if (existingDiv) {
+            const span = existingDiv.querySelector('span');
+            span.textContent = parseInt(span.textContent) + 1;
+        } else {
+            const newDiv = document.createElement('div');
+            newDiv.setAttribute("class", "OrdersItem");
+            newDiv.setAttribute("data-item-id", itemId); 
+            
+            newDiv.innerHTML = itemDiv.innerHTML;
+            const span = document.createElement('span');
+            span.textContent = '1';
+            newDiv.appendChild(span);
+            ordersList.appendChild(newDiv);
+        }
+        
 
-        // Set class and content for newDiv
-        newDiv.setAttribute("class", "OrdersItem");
-        newDiv.innerHTML = itemDiv.innerHTML;
-
-        // Append the span to newDiv
-        newDiv.appendChild(span);
-
-        // Append the new div to the orders list
-        ordersList.appendChild(newDiv);
     });
 });
+
 // --------------------------------------- cloes cart-------------
 let iconCart = document.querySelector(".icon");
 let body = document.querySelector('body');
