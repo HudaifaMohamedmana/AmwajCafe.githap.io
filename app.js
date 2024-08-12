@@ -36,15 +36,22 @@ function showSlide(i){
 
 
 
-// ====================================================================\\
-// ---------------------------------cart--------------------------------||
-//=====================================================================//
+// =======================================================================\\
+// ------------------------------------cart-------------------------------||
+// =======================================================================//
 
 
 const itemButtons = document.querySelectorAll('.items1 button, .items2 button');
 const ordersList = document.querySelector('.orderList');
 const iconContSpan =document.querySelector('.CortIcon span');
-console.log(iconContSpan)
+// console.log(iconContSpan)
+const formButton = document.querySelector('.formDiv button');
+
+formButton.addEventListener("click", (event) => {
+    event.preventDefault(); 
+
+    alert('thanks for yor purches');
+});
 
 
 itemButtons.forEach(button => {
@@ -78,7 +85,14 @@ itemButtons.forEach(button => {
 let iconCart = document.querySelector(".icon");
 let body = document.querySelector('body');
 let closeCart = document.querySelector('.close');
+let formCheckOut = document.querySelector('.chekout');
 
+
+formCheckOut.addEventListener('click',()=>{
+    // window.open
+    window.location.href = 'cart.html';
+
+})
 iconCart.addEventListener('click',()=>{
     body.classList.toggle('showCart')
 
@@ -87,18 +101,16 @@ closeCart.addEventListener('click',()=>{
     body.classList.toggle('showCart')
 
 })
-// itemButtons.forEach(button => {
-//     button.addEventListener("click", () => {
-//         const newDiv = document.createElement('div');
-//         newDiv.setAttribute('class' ,'.OrdersItem');
-//         newDiv.innerHTML= 'first'
-//         newDiv.prepend('orderList');
+// ------------------------- form --------------------------------------------------------------------------
+// const formButton = document.querySelector('.formDiv form');
 
-//     });
+// formButton.addEventListener("click", (event) => {
+//     event.preventDefault(); 
+
+//     alert('thanks for yor purches');
 // });
+// document.querySelector('.formDiv form').addEventListener("submit", (event) => {
+//     event.preventDefault(); // Prevent form submission
 
-// formButton.addEventListener("click", () => {
-   
-//     alert('oh no');
+//     alert('Thanks for your purchase!');
 // });
-
