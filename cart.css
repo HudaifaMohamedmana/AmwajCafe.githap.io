@@ -85,6 +85,8 @@ h3{
     width: 40vw;
     margin: 1vh;
     background-color: rgba(37, 36, 36, 0.9);
+    overflow-y: auto;
+    max-height: 100vh; 
 }
 .orders h1{
     text-align: center;
