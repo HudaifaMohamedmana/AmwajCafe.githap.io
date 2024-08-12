@@ -45,13 +45,6 @@ const itemButtons = document.querySelectorAll('.items1 button, .items2 button');
 const ordersList = document.querySelector('.orderList');
 const iconContSpan =document.querySelector('.CortIcon span');
 // console.log(iconContSpan)
-const formButton = document.querySelector('.formDiv button');
-
-formButton.addEventListener("click", (event) => {
-    event.preventDefault(); 
-
-    alert('thanks for yor purches');
-});
 
 
 itemButtons.forEach(button => {
@@ -88,11 +81,7 @@ let closeCart = document.querySelector('.close');
 let formCheckOut = document.querySelector('.chekout');
 
 
-formCheckOut.addEventListener('click',()=>{
-    // window.open
-    window.location.href = 'cart.html';
 
-})
 iconCart.addEventListener('click',()=>{
     body.classList.toggle('showCart')
 
@@ -101,6 +90,29 @@ closeCart.addEventListener('click',()=>{
     body.classList.toggle('showCart')
 
 })
+
+formCheckOut.addEventListener('click', () => {
+    const orderList =document.querySelectorAll(".orderList div");
+
+    if (orderList.length <= 0) {
+        alert('There is nothing to check out');
+        return; 
+    }else{
+
+    formCheckOut.style.backgroundColor = "red";
+
+    window.location.href = 'cart.html';
+}
+});
+const formButton = document.querySelector('.formDiv button');
+
+formButton.addEventListener("click", (event) => {
+    event.preventDefault(); 
+
+    alert('thanks for yor purches');
+
+});
+
 // ------------------------- form --------------------------------------------------------------------------
 // const formButton = document.querySelector('.formDiv form');
 
