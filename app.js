@@ -41,19 +41,50 @@ function showSlide(i){
 //=====================================================================//
 
 
+const itemButtons = document.querySelectorAll('.items1 button, .items2 button');
+const ordersList = document.querySelector('.orderList');
 
 
-// const itemButtons = document.querySelectorAll('.items1 button');
-// const ordersList = document.querySelectorAll('.ordersLest');
-// const formButton = document.querySelector('.BillingInformation button');
+itemButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const itemId = button.getAttribute('data-id');
+        window.location.href = `cart.html?item=${itemId}`;
+    });
+});
+window.addEventListener('load', () => {
+    const ordersList = document.querySelector('.orderList');
+    const urlParams = new URLSearchParams(window.location.search);
+    const item = urlParams.get('item');
 
-// function addToCart(item) {
-//     console.log("Item added to cart:", item);
-// }
+    if (item) {
+        const newDiv = document.createElement('li'); // Use <li> for list items
+        newDiv.classList.add('OrdersItem'); // Make sure this class is in your CSS
+        newDiv.textContent = `Item: ${item}`; // Customize text as needed
+        ordersList.appendChild(newDiv);
+    }
+});
+
+
 
 // itemButtons.forEach(button => {
 //     button.addEventListener("click", () => {
-//         // addToCart(button); 
+//         const newDiv = document.createElement('div');
+//         newDiv.setAttribute("class","OrdersItem");
+//         newDiv.innerHTML= `first`;
+//         ordersList.appendChild(newDiv);
+
+//     });
+// });
+
+
+
+// itemButtons.forEach(button => {
+//     button.addEventListener("click", () => {
+//         const newDiv = document.createElement('div');
+//         newDiv.setAttribute('class' ,'.OrdersItem');
+//         newDiv.innerHTML= 'first'
+//         newDiv.prepend('orderList');
+
 //     });
 // });
 
