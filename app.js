@@ -45,36 +45,21 @@ const itemButtons = document.querySelectorAll('.items1 button, .items2 button');
 const ordersList = document.querySelector('.orderList');
 
 
+
+
 itemButtons.forEach(button => {
     button.addEventListener("click", () => {
+        const newDiv = document.createElement('div');
+        newDiv.setAttribute("class", "OrdersItem");
+        console.log(newDiv.getAttribute('class'));
         const itemId = button.getAttribute('data-id');
-        window.location.href = `cart.html?item=${itemId}`;
+        const itemDiv = document.getElementById(itemId);
+
+            newDiv.innerHTML = itemDiv.innerHTML;
+
+        ordersList.appendChild(newDiv);
     });
 });
-window.addEventListener('load', () => {
-    const ordersList = document.querySelector('.orderList');
-    const urlParams = new URLSearchParams(window.location.search);
-    const item = urlParams.get('item');
-
-    if (item) {
-        const newDiv = document.createElement('li'); // Use <li> for list items
-        newDiv.classList.add('OrdersItem'); // Make sure this class is in your CSS
-        newDiv.textContent = `Item: ${item}`; // Customize text as needed
-        ordersList.appendChild(newDiv);
-    }
-});
-
-
-
-// itemButtons.forEach(button => {
-//     button.addEventListener("click", () => {
-//         const newDiv = document.createElement('div');
-//         newDiv.setAttribute("class","OrdersItem");
-//         newDiv.innerHTML= `first`;
-//         ordersList.appendChild(newDiv);
-
-//     });
-// });
 
 
 

@@ -172,3 +172,56 @@ margin-bottom: auto;
 font-weight: bold;
 }
 
+.cartTab{
+  width: 1400px;
+  background-color: #353432;
+  color: #eee;
+  position: fixed;
+  inset: 140px 0 0 auto;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+}
+.cartTab h1{
+  padding:20px ;
+  margin: auto;
+  font-weight: 300;
+}
+.btn{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.btn button{
+  background-color: orange;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+.btn button:hover{
+  background-color: white;
+
+}
+.OrdersItem{
+  /* border: solid; */
+  /* margin: auto; */
+  /* padding: 10px; */
+  font-size: 20px;
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  /* background-color: #55555526; */
+}
+.OrdersItem:nth-child(even){
+  background-color: #55555526;
+
+}
+.orderList img{
+  height: 50px;
+}
+.OrdersItem .description{
+  display: flex;
+}
+.OrdersItem button{
+  display: none;
+}
