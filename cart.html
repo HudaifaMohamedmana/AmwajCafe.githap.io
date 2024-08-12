@@ -29,15 +29,14 @@
         </nav>
         <div class="chekout">
 
-            <form action="/submit-checkout" method="POST"></form>
+            
                 <div class="formDiv">
-                
+                <form action="/submit-checkout" method="POST">
+                    <div>
                     <div class="BillingInformation">
                         <h3>Billing Information</h3>
                         <label for="firstname">Name:</label>
                         <input type="text" id="firstname" name="firstname" placeholder="firstname" required>
-                    
-                        
                         <input type="text" id="lastname" name="lastname" placeholder="lastname" required>
                     
                         <label for="email">Email:</label>
@@ -67,9 +66,12 @@
                     </div>
 
                 </div>
+                
             </form>
+        </div>
             <div class="orders">
                 <h1>Order List</h1>
+                <ul class="orderList"></ul>
 
 
 

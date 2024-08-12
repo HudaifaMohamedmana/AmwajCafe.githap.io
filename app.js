@@ -50,21 +50,3 @@ function back() {
 
 
 
-
-
-
-const form = document.querySelector('.BillingInformation button');
-
- 
-function submitOrder(event) {
-    event.
-    // if (condition) {
-    //     alert('thanxs man')
-    // }
-    console.log(event)
-  
-}
-
-form.addEventListener("click", submitOrder);
-
-
