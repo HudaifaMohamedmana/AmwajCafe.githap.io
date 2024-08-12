@@ -50,9 +50,16 @@ function back() {
 // ---------------------------------cart--------------------------------||
 //=====================================================================//
 
+let item = function (item) {
+    item = document.createElement('div');
+    
+}
 
 
-const form = document.querySelector('.BillingInformation button');
+
+
+
+const form = document.getElementById('.BillingInformation button');
 
  
 function submitOrder(event) {

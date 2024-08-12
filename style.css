@@ -16,12 +16,32 @@ display: flex;
 align-items: center;
 }
 .logo{height: 100%;}
-.cart{
-  height: 95%;
+.icons{
   margin-right: 10px;
+  display: flex;
+}
+.icon{
+  height: 100px;
   align-items: center;
 }
-
+.CortIcon{
+  position: relative;
+  align-items: center;
+  
+}
+.CortIcon span{
+  display: block;
+  display: flex;
+  width: 40px;
+  height: 30px;
+  background-color: red;
+  justify-content: center;
+  color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+}
 
 .advisement{
     border: solid;
@@ -78,36 +98,45 @@ align-items: center;
   margin: 1vh;
   flex-wrap: wrap;
 }
-/* .drinks button{
-  opacity: .6;
-  position: absolute;
-  top: 95%;
-  transform: translateY(0%);
+.drinks button {
+  background-color: black;
+  color: white;
   font-size: 30px;
-  background-color: rgba(74, 38, 19, 0.5);
-  color: aliceblue;
-  border: none;
+  padding: 10px ;
+  border-radius: 20px;
+  margin: 10px;
   cursor: pointer;
-  padding: 5px;
-  align-items: center; 
-} */
+}
+.swites button{
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding: 10px ;
+  border-radius: 20px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+
+}
 .items1{
     border: solid;
     width: 17.5vw;
-    height: 500px;
+    height: 555px;
     margin: 1vh;
     border-radius: 35px;
  background-color: rgba(162, 73, 0, 0.847);
+ justify-content: space-between;
     
 }
 .items2{
   border: solid;
   width: 17.5vw;
-  height: 500px;
+  height: 555px;
   margin: 1vh;
   border-radius: 35px;
   background-color: rgba(239, 116, 188, 0.607);
 }
+
 .items1 img{
   width: 100%;
   height: 28vh;
@@ -121,10 +150,10 @@ height: 28vh;
 border-radius: 35px;
 }
 .items1:hover {
-  zoom: 115%;
+  zoom: 103%;
 }
 .items2:hover {
-  zoom: 115%;
+  zoom: 103%;
 }
 .description{
   text-align: center;
