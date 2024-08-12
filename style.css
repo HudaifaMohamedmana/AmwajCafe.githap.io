@@ -80,10 +80,11 @@ align-items: center;
   right: 2%;
 }
 .heder{
+  margin: 10px;
   font-size: 30px;
-  padding-left: 100px;
-  padding-right: 100px;
-  border-radius: 20%;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 30px;
   border: solid;
   background-color: rgba(0, 0, 0, 0.256);
 }
@@ -121,7 +122,7 @@ align-items: center;
 .items1{
     border: solid;
     width: 17.5vw;
-    height: 555px;
+    height: 570px;
     margin: 1vh;
     border-radius: 35px;
  background-color: rgba(162, 73, 0, 0.847);
@@ -131,7 +132,7 @@ align-items: center;
 .items2{
   border: solid;
   width: 17.5vw;
-  height: 555px;
+  height: 570px;
   margin: 1vh;
   border-radius: 35px;
   background-color: rgba(239, 116, 188, 0.607);
@@ -157,6 +158,17 @@ border-radius: 35px;
 }
 .description{
   text-align: center;
+  align-items: center;
 }
+.priceClass{
+  display: flex;
+justify-content: center;
 
+}
+.price{
+ font-size: 35px;
+margin-top: auto;
+margin-bottom: auto;
+font-weight: bold;
+}
 

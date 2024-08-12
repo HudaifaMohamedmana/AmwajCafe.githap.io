@@ -19,11 +19,6 @@ function showSlide(i){
     } else if(i <0){
         ADID = list.length -1 ;
     }
-
- 
-
-
-
     list.forEach(list =>{
        
         list.classList.remove("displaySlide");
@@ -50,16 +45,15 @@ function back() {
 // ---------------------------------cart--------------------------------||
 //=====================================================================//
 
-let item = function (item) {
-    item = document.createElement('div');
-    
-}
 
 
 
 
 
-const form = document.getElementById('.BillingInformation button');
+
+
+
+const form = document.querySelector('.BillingInformation button');
 
  
 function submitOrder(event) {
